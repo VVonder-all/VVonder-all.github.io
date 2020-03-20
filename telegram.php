@@ -28,7 +28,7 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 
 // Это условие Если отправлено редирект если нет  ошибка Можно убрать!
 if ($sendToTelegram) {
-  header('Location: url.html');
+  header('Location: index.html');
 } else {
   echo "Error";
 }
