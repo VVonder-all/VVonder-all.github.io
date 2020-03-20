@@ -6,7 +6,7 @@
 $name = $_POST['user_name'];
 $message = $_POST['user_message'];
 $token = "1105355730:AAEY4As7XjWEOOYiJBH4ud_lplib0r_MDL4";
-$chat_id = "1149295077";
+$chat_id = "-404497460";
 $arr = array(
 	'Имя отправителя' => $name, 
 	'Сообщение' => $message
