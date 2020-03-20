@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
-
-    <title>Отправка формы на почту </title>
-
-    <!-- Bootstrap core CSS -->
+    <title>WonderFUL</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/pe-playground.css">
+    <link rel="stylesheet" href="assets/css/pe-tenue.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <style>
     	form {
     		background-color: #f9f9f9;
@@ -23,13 +23,39 @@
     	}
     </style>
   </head>
-
   <body>
+
+    <header class="pe-header">
+      <div class="pe-container"> <a href="https://www.instagram.com/priton.02/"><img src="assets/img/logo.png" alt="logo" class="pe-logo"></a></div>
+    </header>
+    <section class="pe-playground">
+      <div class="pe-texture">
+        <h1 class="tenue-shadow tenue-extras"><sub>w</sub><sub>o</sub><sub>n</sub><sub>d</sub><sub>e</sub><sub>r</sub></h1>
+        <div class="tenue-overlay"></div>
+      </div>
+      <div class="pe-container"> 
+        <div class="pe-details">
+          <h3 id="intro"><a href="#intro">Мой блог</a></h3>
+             <div style="text-align:center">
+               <figure>
+                  <img style="position: center; width: 500px; height: 500px;" src="assets/img/5.jpg" alt="Центрируем изображение">
+                 <figcaption>А в голове одна мысль: «Живёшь ведь только раз, только раз»🥂</figcaption>
+                 <img style="position: center; width: 500px; height: 500px;" src="assets/img/4.jpg" alt="Центрируем изображение">
+                  <div><p align="center">Живи так, как будто ты должен сейчас попрощаться с жизнью,<br>как будто оставшееся тебе это время неожиданный подарок.</p></div> 
+                <div><img style="position: relative; width: 500px; height: 500px;" src="assets/img/3.jpg" alt="Центрируем изображение">
+                   <p align="center">Хорошо, когда рядом есть те, кто в тебя верят.</p></div>
+               </figure>
+               </div>  
+        
+     
+          <h3 id="usage"><a href="#usage">Отправить сообщение</a></h3>
+          
+    
     <div class="container">
 
       <div class="row">
       	<div class="col-sm-4">
-      		<form action="mail.php" method="POST">
+      		<form action="telegram.php" method="method">
       			<legend>Заголовок формы</legend>
 
       			<div class="form-group">
@@ -62,6 +88,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+        </div>
+      </div>
+    <footer class="pe-footer">
+      <p>&copy; 2020 <a href="https://www.instagram.com/priton.02/">instagram</a></p>
+    </footer>
+    <script>
+      var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+      var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+      var isChrome = !!window.chrome && !isOpera;
+      var isIE = /*@cc_on!@*/false || !!document.documentMode;
+      
+      if(isFirefox || isIE) {
+        document.querySelector('.tenue-overlay').classList.add('u-dn');
+      }
+      
+          
+    </script>
   </body>
 </html>
-	
